@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\FFmpegWrapper.dll
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\FFmpegWrapper.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\obj\Debug\ConsoleTest.exe
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\ConsoleTest\bin\Debug\FFmpeg\ffmpeg.exe
