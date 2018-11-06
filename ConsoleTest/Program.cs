@@ -18,8 +18,11 @@ namespace ConsoleTest
 
           var res = FfmpegConvertHelper.Convert(
                 new []
-                {"D:\\Downloads\\Elementary (Season 05) LostFilm\\Elementary.[S05E01].XviD.LostFilm.[qqss44].avi"},
-                VideoFormat.Same, AudioFormat.Mp2, s => Console.WriteLine(s), canc.Token, null, "Conv");
+                {
+                    "D:\\Downloads\\Elementary (Season 05) LostFilm\\Elementary.[S05E01].XviD.LostFilm.[qqss44].avi",
+                    "D:\\Downloads\\Elementary (Season 05) LostFilm\\Elementary.[S05E02].XviD.LostFilm.[qqss44].avi"
+                },
+                VideoFormat.Same, AudioFormat.Mp2, s => Console.WriteLine(s), null, "Conv");
             Console.WriteLine(res);
             var x =  Console.ReadLine();
 

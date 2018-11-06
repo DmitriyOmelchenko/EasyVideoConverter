@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegWrapper", "FFmpegWrap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{3A9353B2-F99E-4463-BC5F-2E5B7720C4E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyVideoConverter.UI", "EasyVideoConverter.UI\EasyVideoConverter.UI.csproj", "{5DA80BFE-0DC2-4D55-B208-68C624770541}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3A9353B2-F99E-4463-BC5F-2E5B7720C4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A9353B2-F99E-4463-BC5F-2E5B7720C4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A9353B2-F99E-4463-BC5F-2E5B7720C4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA80BFE-0DC2-4D55-B208-68C624770541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA80BFE-0DC2-4D55-B208-68C624770541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA80BFE-0DC2-4D55-B208-68C624770541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA80BFE-0DC2-4D55-B208-68C624770541}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

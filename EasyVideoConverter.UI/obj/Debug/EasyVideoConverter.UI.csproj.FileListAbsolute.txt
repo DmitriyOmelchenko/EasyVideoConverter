@@ -1,0 +1,5 @@
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI_MarkupCompile.cache
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI_MarkupCompile.lref

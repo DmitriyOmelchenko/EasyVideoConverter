@@ -59,7 +59,7 @@ namespace FFmpegWrapper
 
 
         public bool Convert(IEnumerable<string> inputFiles, VideoFormat videoFormat, 
-            AudioFormat audioFormat, Action<string> writelog, CancellationToken cancellationToken,
+            AudioFormat audioFormat, Action<string> writelog,
             string destinationFolder = null, string outputPrefix = null, string outPutPostFix = null)
         {
             try
@@ -90,7 +90,7 @@ namespace FFmpegWrapper
                         outPutFile = Path.Combine(Path.GetDirectoryName(currentFile), destinationFileName);
 
                     arguments.Append(
-                        $"-vcodec {videoFormat.GetDescription()} -acodec {audioFormat.GetDescription()} \"{outPutFile}\" ");
+                        $"-map {i} -vcodec {videoFormat.GetDescription()} -acodec {audioFormat.GetDescription()} \"{outPutFile}\" ");
                 }
 
                 Console.WriteLine(arguments);
