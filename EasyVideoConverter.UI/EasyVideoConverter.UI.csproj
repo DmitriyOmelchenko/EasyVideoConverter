@@ -36,6 +36,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>if_convert-files-transfer-conversion-graph_3810849.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialDesignColors, Version=1.0.0.14576, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.1.1\lib\net45\MaterialDesignColors.dll</HintPath>
@@ -109,6 +112,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFmpegWrapper\FFmpegWrapper.csproj">
+      <Project>{f1a491e3-afd7-4906-b06a-3cbb363f9bba}</Project>
+      <Name>FFmpegWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="if_convert-files-transfer-conversion-graph_3810849.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MVVMbasics.2.3.0\build\MVVMbasics.targets" Condition="Exists('..\packages\MVVMbasics.2.3.0\build\MVVMbasics.targets')" />

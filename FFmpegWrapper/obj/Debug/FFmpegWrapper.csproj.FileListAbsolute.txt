@@ -1,6 +1,5 @@
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\bin\Debug\FFmpegWrapper.dll
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\bin\Debug\FFmpegWrapper.pdb
-C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.dll
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.pdb

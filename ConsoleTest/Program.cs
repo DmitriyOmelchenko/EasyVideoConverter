@@ -12,9 +12,9 @@ namespace ConsoleTest
     {
         public static void Main(string[] args)
         {
-            var FfmpegConvertHelper = new FfmpegConvertHelper();
+            //var FfmpegConvertHelper = new FfmpegConvertHelper();
 
-            var canc = new CancellationTokenSource();
+            //var canc = new CancellationTokenSource();
 
           var res = FfmpegConvertHelper.Convert(
                 new []

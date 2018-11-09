@@ -31,17 +31,17 @@ namespace FFmpegWrapper
         Mp2,
     }
 
-    public class FfmpegConvertHelper
+    public static class FfmpegConvertHelper
     {
-        private string AddPrefix(string outputPrefix) => string.IsNullOrEmpty(outputPrefix)
+        private static string AddPrefix(string outputPrefix) => string.IsNullOrEmpty(outputPrefix)
             ? outputPrefix
             : outputPrefix + "_";
 
-        private  string AddPostfix(string outputPostfix) => string.IsNullOrEmpty(outputPostfix)
+        private static string AddPostfix(string outputPostfix) => string.IsNullOrEmpty(outputPostfix)
             ? outputPostfix
             : "_" + outputPostfix;
 
-        private string AddVideoExt(string file, VideoFormat videoFormat)
+        private static string AddVideoExt(string file, VideoFormat videoFormat)
         {
             switch (videoFormat)
             {
@@ -58,7 +58,7 @@ namespace FFmpegWrapper
 
 
 
-        public bool Convert(IEnumerable<string> inputFiles, VideoFormat videoFormat, 
+        public static bool Convert(IEnumerable<string> inputFiles, VideoFormat videoFormat, 
             AudioFormat audioFormat, Action<string> writelog,
             string destinationFolder = null, string outputPrefix = null, string outPutPostFix = null)
         {
