@@ -5,14 +5,15 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Windows.Input;
 using FFmpegWrapper;
 using FFmpegWrapper.Extensions;
-using Microsoft.Win32;
 using MVVMbasics;
 using MVVMbasics.Attributes;
 using MVVMbasics.Commands;
 using MVVMbasics.Viewmodels;
+using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 
 namespace EasyVideoConverter.UI.ViewModels
 {
@@ -34,7 +35,7 @@ namespace EasyVideoConverter.UI.ViewModels
             foreach (var file in openFileDialog.FileNames)
                 FilesCollection.Add(file);
 
-            if (openFileDialog.FileNames.Any())
+            if (openFileDialog.FileNames.Any() && string.IsNullOrEmpty(OutputDir))
                 OutputDir = Path.GetDirectoryName(openFileDialog.FileNames.FirstOrDefault());
         });
 
@@ -42,15 +43,15 @@ namespace EasyVideoConverter.UI.ViewModels
 
         public string PostFix { get; set; }
 
-        public AudioFormat SelectedAudioFormat { get; set; }
+        public AudioFormat SelectedAudioFormat { get; set; } = AudioFormat.Mp2;
 
         public string OutputDir { get; set; }
 
-        public Dictionary<string,AudioFormat> AudioFormatDictionary { get; set; } = new Dictionary<string, AudioFormat>()
+        public AudioFormat[] AudioFormatDictionary { get; set; } = new []
         {
-            { AudioFormat.Mp2.GetDescription(),AudioFormat.Mp2 },
-            { AudioFormat.Mp3.GetDescription(),AudioFormat.Mp3 },
-            { AudioFormat.Same.GetDescription(),AudioFormat.Same }
+            AudioFormat.Mp2 ,
+            AudioFormat.Mp3, 
+            AudioFormat.Same 
         };
 
         public ICommand ClearFilesCommand => new BaseCommand(() => { FilesCollection.Clear(); });
@@ -64,6 +65,21 @@ namespace EasyVideoConverter.UI.ViewModels
                 Directory.CreateDirectory(OutputDir);
             
             FfmpegConvertHelper.Convert(FilesCollection.ToArray(),VideoFormat.Same,AudioFormat.Mp2,null,OutputDir);
+        });
+
+        public ICommand SelectFolderCommand => new BaseCommand(() =>
+        {
+            var folderBrowser = new FolderBrowserDialog();
+
+            if (!string.IsNullOrEmpty(OutputDir))
+                folderBrowser.SelectedPath = OutputDir;
+
+            var choice = folderBrowser.ShowDialog();
+
+            if(choice != DialogResult.OK)
+                return;
+
+            OutputDir = folderBrowser.SelectedPath;
         });
     }
 }

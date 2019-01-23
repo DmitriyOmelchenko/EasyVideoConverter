@@ -25,3 +25,10 @@ C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\E
 C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI.csproj.CopyComplete
 C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI.exe
 C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\obj\Debug\EasyVideoConverter.UI.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\ControlzEx.dll
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\source\repos\EasyVideoConverter\EasyVideoConverter.UI\bin\Debug\MaterialDesignThemes.MahApps.dll

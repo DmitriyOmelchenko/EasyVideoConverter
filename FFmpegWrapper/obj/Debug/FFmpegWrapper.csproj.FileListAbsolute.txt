@@ -4,3 +4,4 @@ C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWra
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.dll
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.pdb
 C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\bin\Debug\FFmpeg\ffmpeg.exe
+C:\Users\Admin\source\repos\EasyVideoConverter\FFmpegWrapper\obj\Debug\FFmpegWrapper.csprojAssemblyReference.cache
