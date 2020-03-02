@@ -45,6 +45,8 @@ namespace EasyVideoConverter.UI.ViewModels
 
         public AudioFormat SelectedAudioFormat { get; set; } = AudioFormat.Mp2;
 
+        public VideoFormat SelectedVideoFormat { get; set; } = VideoFormat.Same;
+
         public string OutputDir { get; set; }
 
         public AudioFormat[] AudioFormatDictionary { get; set; } = new []
@@ -52,6 +54,13 @@ namespace EasyVideoConverter.UI.ViewModels
             AudioFormat.Mp2 ,
             AudioFormat.Mp3, 
             AudioFormat.Same 
+        };
+
+        public VideoFormat[] VideoFormats { get; set; } = new[]
+        {
+            VideoFormat.Same,
+            VideoFormat.Avi,
+            VideoFormat.Mp4
         };
 
         public ICommand ClearFilesCommand => new BaseCommand(() => { FilesCollection.Clear(); });
@@ -64,7 +73,7 @@ namespace EasyVideoConverter.UI.ViewModels
             if (!Directory.Exists(OutputDir))
                 Directory.CreateDirectory(OutputDir);
             
-            FfmpegConvertHelper.Convert(FilesCollection.ToArray(),VideoFormat.Same,AudioFormat.Mp2,null,OutputDir);
+            FfmpegConvertHelper.Convert(FilesCollection.ToArray(),SelectedVideoFormat,SelectedAudioFormat,null,OutputDir);
         });
 
         public ICommand SelectFolderCommand => new BaseCommand(() =>

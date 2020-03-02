@@ -17,7 +17,7 @@ namespace FFmpegWrapper
         Same = 0,
         [Description("avi")]
         Avi,
-        [Description("mp4")]
+        [Description("mpeg4")]
         Mp4
     }
 

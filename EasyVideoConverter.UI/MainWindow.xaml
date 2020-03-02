@@ -76,6 +76,11 @@
             <ComboBox Margin="10"
                       ItemsSource="{Binding AudioFormatDictionary}"
                       SelectedItem="{Binding SelectedAudioFormat}"/>
+            
+            <TextBlock Margin="10,0">Video Formats</TextBlock>
+            <ComboBox Margin="10"
+                      ItemsSource="{Binding VideoFormats}"
+                      SelectedItem="{Binding SelectedVideoFormat}"/>
         </StackPanel>
     </Grid>
 </controls:MetroWindow>
